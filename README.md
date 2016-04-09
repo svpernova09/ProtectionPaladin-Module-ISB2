@@ -4,6 +4,8 @@ http://isboxer.com/forum/viewtopic.php?f=57&t=7762#p36741
 
 ## Hotkeys
 
+You can change the default key combination when you map your Paladin's Hotkeys to the Procedures from `Protection Paladin`
+
 | Category | Display Name | Default Key Combination |
 |---|---|---|
 | Combat | DPS Rotation | 1  |
@@ -32,7 +34,7 @@ http://isboxer.com/forum/viewtopic.php?f=57&t=7762#p36741
 | 6 | Holy Wrath |
 | 7 | Flash of Light |
 | 8 | Shield of the Righteous |
-| 9 | Shield of the Righteous |
+| 9 | Sacred Shield |
 | Shift+1 | Trinket/Cooldown |
 | Alt+1 | Fist/Hammer of Justice |
 | T | Reckoning |

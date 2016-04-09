@@ -12,24 +12,33 @@
     <OnPress>
       <Instruction Code="Switch">
         <Parameter Value="[[CurrentStep]]" />
+        <Children />
         <Branches>
           <Branch Value="1">
             <Children>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="5" />
+                <Children />
+                <Branches />
               </Instruction>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="2" />
+                <Children />
+                <Branches />
               </Instruction>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="1" />
+                <Children />
+                <Branches />
               </Instruction>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="8" />
+                <Children />
+                <Branches />
               </Instruction>
             </Children>
           </Branch>
@@ -38,6 +47,12 @@
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="2" />
+                <Children />
+                <Branches />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="9" />
               </Instruction>
             </Children>
           </Branch>
@@ -46,14 +61,20 @@
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="6" />
+                <Children />
+                <Branches />
               </Instruction>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="4" />
+                <Children />
+                <Branches />
               </Instruction>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="8" />
+                <Children />
+                <Branches />
               </Instruction>
             </Children>
           </Branch>
@@ -74,24 +95,33 @@
     <OnPress>
       <Instruction Code="Switch">
         <Parameter Value="[[CurrentStep]]" />
+        <Children />
         <Branches>
           <Branch Value="1">
             <Children>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="5" />
+                <Children />
+                <Branches />
               </Instruction>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="2" />
+                <Children />
+                <Branches />
               </Instruction>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="1" />
+                <Children />
+                <Branches />
               </Instruction>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="8" />
+                <Children />
+                <Branches />
               </Instruction>
             </Children>
           </Branch>
@@ -100,6 +130,12 @@
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="2" />
+                <Children />
+                <Branches />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="9" />
               </Instruction>
             </Children>
           </Branch>
@@ -108,14 +144,20 @@
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="6" />
+                <Children />
+                <Branches />
               </Instruction>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="4" />
+                <Children />
+                <Branches />
               </Instruction>
               <Instruction Code="Button" Target="self">
                 <Parameter Value="PressAndRelease" />
                 <Parameter Value="8" />
+                <Children />
+                <Branches />
               </Instruction>
             </Children>
           </Branch>
@@ -137,6 +179,8 @@
       <Instruction Code="Button" Target="self">
         <Parameter Value="PressAndRelease" />
         <Parameter Value="T" />
+        <Children />
+        <Branches />
       </Instruction>
     </OnPress>
     <OnRelease />
@@ -150,6 +194,8 @@
       <Instruction Code="Button" Target="self">
         <Parameter Value="PressAndRelease" />
         <Parameter Value="Shift+1" />
+        <Children />
+        <Branches />
       </Instruction>
     </OnPress>
     <OnRelease />
@@ -163,6 +209,8 @@
       <Instruction Code="Button" Target="self">
         <Parameter Value="PressAndRelease" />
         <Parameter Value="S" />
+        <Children />
+        <Branches />
       </Instruction>
     </OnPress>
     <OnRelease />
@@ -200,6 +248,8 @@
       <Instruction Code="Button" Target="self">
         <Parameter Value="PressAndRelease" />
         <Parameter Value="F2" />
+        <Children />
+        <Branches />
       </Instruction>
     </OnPress>
     <OnRelease />
@@ -237,6 +287,8 @@
       <Instruction Code="Button" Target="self">
         <Parameter Value="PressAndRelease" />
         <Parameter Value="Alt+1" />
+        <Children />
+        <Branches />
       </Instruction>
     </OnPress>
     <OnRelease />
