@@ -2,6 +2,32 @@
 
 http://isboxer.com/forum/viewtopic.php?f=57&t=7762#p36741
 
+## Usage
+
+### Getting the Module
+
+Clone this repo: `git clone git@github.com:svpernova09/ProtectionPaladin-Module-ISB2.git Protection Paladin`
+
+OR
+
+Download Zip: https://github.com/svpernova09/ProtectionPaladin-Module-ISB2/archive/master.zip
+
+Extract to `C:\Path\to\ISBoxer 2\Modules\Protection Paladin`
+
+### Adding the Module to your Paladin in ISBoxer 2
+
+* Edit your team
+* Click on the Modules Tab
+* Click box to enable Protect Paladin (Make sure "Standard MMO Combat" is unchecked or won't interfere)
+* Close the Team Editor Window
+* Click ISBoxer 2 Settings from the main ISBoxer 2 window
+* Click on ISboxer 2 Modules Tab
+* Click the dropdown at the top and select your Paladin character
+* Click on the Hotkeys Tab
+* Add or Edit hotkeys and in the action Column Select Trigger Action type: Call Procedure
+* Select "[Protection Paladin] DPS Rotation" from the Selected procedure dropdown
+* Do this for ever ability you would like to use, abilities marked (NYI) Haven't been built yet
+
 ## Hotkeys
 
 You can change the default key combination when you map your Paladin's Hotkeys to the Procedures from `Protection Paladin`
