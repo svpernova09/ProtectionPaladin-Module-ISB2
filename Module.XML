@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="09ae6b0f-5e8c-4376-82dc-f11801f27783" DisplayName="Protection Paladin">
+  <Description>Module for Protection Paladin</Description>
+  <Version>0.0.1</Version>
+  <ModuleTargets>Character</ModuleTargets>
+  <ModuleGenres>MMORPG</ModuleGenres>
+  <Games>
+    <guid>6d647be5-7cfa-41e1-b5dd-a04c45c1eef9</guid>
+  </Games>
+  <Procedure Guid="1f4bc2a1-f972-48d0-b971-c074530e918c" DisplayName="DPS Rotation">
+    <ParameterDefinitions />
+    <OnPress>
+      <Instruction Code="Switch">
+        <Parameter Value="[[CurrentStep]]" />
+        <Branches>
+          <Branch Value="1">
+            <Children>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="5" />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="2" />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="1" />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="8" />
+              </Instruction>
+            </Children>
+          </Branch>
+          <Branch Value="2">
+            <Children>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="2" />
+              </Instruction>
+            </Children>
+          </Branch>
+          <Branch Value="3">
+            <Children>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="6" />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="4" />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="8" />
+              </Instruction>
+            </Children>
+          </Branch>
+        </Branches>
+      </Instruction>
+    </OnPress>
+    <OnRelease />
+    <StepCounter>
+      <Steps>
+        <Step />
+        <Step />
+        <Step />
+      </Steps>
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="8c90e300-9945-4ace-9e71-8822780d9052" DisplayName="AOE DPS Rotation">
+    <ParameterDefinitions />
+    <OnPress>
+      <Instruction Code="Switch">
+        <Parameter Value="[[CurrentStep]]" />
+        <Branches>
+          <Branch Value="1">
+            <Children>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="5" />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="2" />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="1" />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="8" />
+              </Instruction>
+            </Children>
+          </Branch>
+          <Branch Value="2">
+            <Children>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="2" />
+              </Instruction>
+            </Children>
+          </Branch>
+          <Branch Value="3">
+            <Children>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="6" />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="4" />
+              </Instruction>
+              <Instruction Code="Button" Target="self">
+                <Parameter Value="PressAndRelease" />
+                <Parameter Value="8" />
+              </Instruction>
+            </Children>
+          </Branch>
+        </Branches>
+      </Instruction>
+    </OnPress>
+    <OnRelease />
+    <StepCounter>
+      <Steps>
+        <Step />
+        <Step />
+        <Step />
+      </Steps>
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="ad056388-4f45-4d6f-9678-2bc95fc4ac33" DisplayName="Taunt">
+    <ParameterDefinitions />
+    <OnPress>
+      <Instruction Code="Button" Target="self">
+        <Parameter Value="PressAndRelease" />
+        <Parameter Value="T" />
+      </Instruction>
+    </OnPress>
+    <OnRelease />
+    <StepCounter>
+      <Steps />
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="2aa1372d-aeab-4683-9fc1-e75424b36e79" DisplayName="Cooldowns">
+    <ParameterDefinitions />
+    <OnPress>
+      <Instruction Code="Button" Target="self">
+        <Parameter Value="PressAndRelease" />
+        <Parameter Value="Shift+1" />
+      </Instruction>
+    </OnPress>
+    <OnRelease />
+    <StepCounter>
+      <Steps />
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="c6cc210f-4636-4c8d-84d6-daffa25161f3" DisplayName="Interrupt">
+    <ParameterDefinitions />
+    <OnPress>
+      <Instruction Code="Button" Target="self">
+        <Parameter Value="PressAndRelease" />
+        <Parameter Value="S" />
+      </Instruction>
+    </OnPress>
+    <OnRelease />
+    <StepCounter>
+      <Steps />
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="bf72efbc-032e-4df8-ab60-12d13988a4ed" DisplayName="Panic (NYI)">
+    <ParameterDefinitions />
+    <OnPress />
+    <OnRelease />
+    <StepCounter>
+      <Steps />
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="67f2e6cc-8fcf-4d65-bb2b-bc3041dbb850" DisplayName="Ground AOE (NYI)">
+    <ParameterDefinitions />
+    <OnPress />
+    <OnRelease />
+    <StepCounter>
+      <Steps />
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="26ea7973-d5d6-4faf-955a-8761d8ac53a5" DisplayName="Pull (NYI)">
+    <ParameterDefinitions />
+    <OnPress />
+    <OnRelease />
+    <StepCounter>
+      <Steps />
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="1d0ed80f-d071-49cd-9cbe-67c1d583748c" DisplayName="Buffs">
+    <ParameterDefinitions />
+    <OnPress>
+      <Instruction Code="Button" Target="self">
+        <Parameter Value="PressAndRelease" />
+        <Parameter Value="F2" />
+      </Instruction>
+    </OnPress>
+    <OnRelease />
+    <StepCounter>
+      <Steps />
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="0f1d62c6-3876-4803-ab0c-cba59e3174de" DisplayName="Activate Proc (NYI)">
+    <ParameterDefinitions />
+    <OnPress />
+    <OnRelease />
+    <StepCounter>
+      <Steps />
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="5228bd8e-c8a0-4eff-b0f1-f2df054dd37f" DisplayName="PVP DPS Rotation (NYI)">
+    <ParameterDefinitions />
+    <OnPress />
+    <OnRelease />
+    <StepCounter>
+      <Steps />
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="ac5089e7-2e52-4e81-a415-99bc5b30a296" DisplayName="PVP AOE DPS Rotation (NYI)">
+    <ParameterDefinitions />
+    <OnPress />
+    <OnRelease />
+    <StepCounter>
+      <Steps />
+    </StepCounter>
+  </Procedure>
+  <Procedure Guid="fa38fb23-fbb0-4ddc-99fb-fa13e3bd600e" DisplayName="Stun">
+    <ParameterDefinitions />
+    <OnPress>
+      <Instruction Code="Button" Target="self">
+        <Parameter Value="PressAndRelease" />
+        <Parameter Value="Alt+1" />
+      </Instruction>
+    </OnPress>
+    <OnRelease />
+    <StepCounter>
+      <Steps />
+    </StepCounter>
+  </Procedure>
+  <Hotkey Guid="d8887d73-33f6-4338-8903-e513b2106b13" DisplayName="DPS Rotation" Category="Combat" Global="false" Enable="true">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>1f4bc2a1-f972-48d0-b971-c074530e918c</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>1f4bc2a1-f972-48d0-b971-c074530e918c</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="042bc251-0c99-48d4-93dd-0f7b87bfc77f" DisplayName="AOE DPS Rotation" Category="Combat" Global="false" Enable="true">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>8c90e300-9945-4ace-9e71-8822780d9052</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>8c90e300-9945-4ace-9e71-8822780d9052</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="8f1c34f1-b145-41e3-a07f-8db156f79c87" DisplayName="PVP DPS Rotation (NYI)" Category="Combat" Global="false" Enable="false">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>5228bd8e-c8a0-4eff-b0f1-f2df054dd37f</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>5228bd8e-c8a0-4eff-b0f1-f2df054dd37f</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="14a896b4-906d-4d94-ad70-73991ba9e425" DisplayName="PVP AOE DPS Rotation (NYI)" Category="Combat" Global="false" Enable="false">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>ac5089e7-2e52-4e81-a415-99bc5b30a296</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>ac5089e7-2e52-4e81-a415-99bc5b30a296</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="69e79586-c8b5-44e3-a451-df83ea53368f" DisplayName="Activate Proc (NYI)" Category="Combat" Global="false" Enable="false">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>0f1d62c6-3876-4803-ab0c-cba59e3174de</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>0f1d62c6-3876-4803-ab0c-cba59e3174de</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="01ab50d7-fc4a-402c-9e11-22bd2b001ffa" DisplayName="Interrupt" Category="Combat" Global="false" Enable="true">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>c6cc210f-4636-4c8d-84d6-daffa25161f3</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>c6cc210f-4636-4c8d-84d6-daffa25161f3</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="64f744a3-dd10-48fc-b19f-50ff339caf95" DisplayName="Stun" Category="Combat" Global="false" Enable="true">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>fa38fb23-fbb0-4ddc-99fb-fa13e3bd600e</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>fa38fb23-fbb0-4ddc-99fb-fa13e3bd600e</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="47ba0bd0-fa2f-424d-90e8-7100be4c9019" DisplayName="Ground AOE (NYI)" Category="Combat" Global="false" Enable="false">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>67f2e6cc-8fcf-4d65-bb2b-bc3041dbb850</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>67f2e6cc-8fcf-4d65-bb2b-bc3041dbb850</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="6114f5b6-b40c-46cf-b650-e76d13ffa12f" DisplayName="Cooldowns" Category="Combat" Global="false" Enable="true">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>2aa1372d-aeab-4683-9fc1-e75424b36e79</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>2aa1372d-aeab-4683-9fc1-e75424b36e79</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="7c61444c-aaf7-497e-9594-fc8bf4b7e6d1" DisplayName="Panic (NYI)" Category="Combat" Global="false" Enable="false">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>bf72efbc-032e-4df8-ab60-12d13988a4ed</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>bf72efbc-032e-4df8-ab60-12d13988a4ed</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="a7f71ee8-b846-422f-9789-2ee0fddb710f" DisplayName="Taunt" Category="Combat" Global="false" Enable="true">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>ad056388-4f45-4d6f-9678-2bc95fc4ac33</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>ad056388-4f45-4d6f-9678-2bc95fc4ac33</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="9bbb1127-c7e9-4858-90f8-1f18055a8749" DisplayName="Pull (NYI)" Category="Combat" Global="false" Enable="false">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>26ea7973-d5d6-4faf-955a-8761d8ac53a5</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>26ea7973-d5d6-4faf-955a-8761d8ac53a5</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Hotkey Guid="ee1f0ee5-17bd-4614-ade8-2d33ba501ee2" DisplayName="Buffs" Category="Combat" Global="false" Enable="false">
+    <PressAction xsi:type="ProcedureAction">
+      <Procedure>1d0ed80f-d071-49cd-9cbe-67c1d583748c</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>true</OnPress>
+    </PressAction>
+    <ReleaseAction xsi:type="ProcedureAction">
+      <Procedure>1d0ed80f-d071-49cd-9cbe-67c1d583748c</Procedure>
+      <Module>09ae6b0f-5e8c-4376-82dc-f11801f27783</Module>
+      <Parameters />
+      <OnPress>false</OnPress>
+    </ReleaseAction>
+  </Hotkey>
+  <Parent>00000000-0000-0000-0000-000000000000</Parent>
+  <AuthorName>Svpernova09</AuthorName>
+  <AuthorEmail>halo09@gmail.com</AuthorEmail>
+  <AuthorBitcoinAddress>1EgqrwWyeSkRvKoozGWcZb1ymTD3K9kPep</AuthorBitcoinAddress>
+  <AuthorPayPalEmail>ha09lo@hotmail.com</AuthorPayPalEmail>
+</UserModule>
